@@ -1,0 +1,19 @@
+{
+  "name": "module_federation_workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Asterka/module_federation_workshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Asterka/module_federation_workshop/issues"
+  },
+  "homepage": "https://github.com/Asterka/module_federation_workshop#readme"
+}
