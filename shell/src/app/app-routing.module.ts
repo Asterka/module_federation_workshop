@@ -30,16 +30,16 @@ export const APP_ROUTES: Routes = [
         }),
   },
   {
-    path: 'flat1',
+    path: 'flat3',
     loadChildren: () =>
       loadRemoteModule({
         type: 'module',
-        remoteEntry: 'http://localhost:8081/remoteEntry.js',
+        remoteEntry: 'http://localhost:8083/remoteEntry.js',
         exposedModule: './ApartmentRouting',
       })
         .then((m) => m.AppRoutingModule)
         .catch(() => {
-          console.log('2 Didnt load');
+          console.log('3 Didnt load');
         }),
   },
 ];
