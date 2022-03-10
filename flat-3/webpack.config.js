@@ -29,11 +29,11 @@ module.exports = {
         library: { type: "module" },
 
         // For remotes (please adjust)
-        // name: "flat3",
-        // filename: "remoteEntry.js",
-        // exposes: {
-        //     './ApartmentRouting': './/src/app/app-routing.module.ts',
-        // },
+        name: "flat3",
+        filename: "remoteEntry.js",
+        exposes: {
+            './ApartmentRouting': './/src/app/app-routing.module.ts',
+        },
 
         // For hosts (please adjust)
         // remotes: {

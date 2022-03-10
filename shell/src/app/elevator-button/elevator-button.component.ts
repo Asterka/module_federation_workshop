@@ -9,6 +9,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ElevatorButtonComponent implements OnInit {
 
   @Input() name: string = "";
+  @Input() hasErrored: boolean = false;
 
   isOn: boolean = false;
 

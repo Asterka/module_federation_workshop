@@ -1,3 +1,4 @@
+import { ElevatorStateService } from './elevator-state.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -16,7 +17,7 @@ import { ElevatorButtonComponent } from './elevator-button/elevator-button.compo
     BrowserModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [ElevatorStateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

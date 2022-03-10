@@ -1,10 +1,11 @@
+import { ElevatorStateService } from './elevator-state.service';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { loadRemoteModule } from '@angular-architects/module-federation';
 
 export const APP_ROUTES: Routes = [
   {
-    path: 'flat1',
+    path: '1',
     loadChildren: () =>
       loadRemoteModule({
         type: 'module',
@@ -12,12 +13,9 @@ export const APP_ROUTES: Routes = [
         exposedModule: './ApartmentRouting',
       })
         .then((m) => m.AppRoutingModule)
-        .catch(() => {
-          console.log('2 Didnt load');
-        }),
   },
   {
-    path: 'flat2',
+    path: '2',
     loadChildren: () =>
       loadRemoteModule({
         type: 'module',
@@ -25,12 +23,9 @@ export const APP_ROUTES: Routes = [
         exposedModule: './ApartmentRouting',
       })
         .then((m) => m.AppRoutingModule)
-        .catch(() => {
-          console.log('2 Didnt load');
-        }),
   },
   {
-    path: 'flat3',
+    path: '3',
     loadChildren: () =>
       loadRemoteModule({
         type: 'module',
@@ -38,9 +33,6 @@ export const APP_ROUTES: Routes = [
         exposedModule: './ApartmentRouting',
       })
         .then((m) => m.AppRoutingModule)
-        .catch(() => {
-          console.log('3 Didnt load');
-        }),
   },
 ];
 
