@@ -1,21 +1,20 @@
-import { Flat2Module } from './flat2-loader/flat2-loader.component';
-
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { Flat1Module } from './flat1-loader/flat1-loader.component';
+import { EmptyroomComponent } from './emptyroom/emptyroom.component';
+import { ElevatorButtonComponent } from './elevator-button/elevator-button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    EmptyroomComponent,
+    ElevatorButtonComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    Flat1Module,
-    Flat2Module
   ],
   providers: [],
   bootstrap: [AppComponent]

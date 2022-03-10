@@ -1,13 +1,21 @@
-<div style="width: 100vw; height: 100vh; position: relative;">
-  <img src="./assets/sky.svg" style="position: absolute; top: 0;left: 0; width: 100vw; height: 100vh;"/>
+<img src="./assets/sky.svg" style="position: absolute; top: 0;left: 0; width: 100vw; height: 100vh;"/>
+<div style="width: 100vw; height: 100vh; position: relative; display: flex; justify-content: center;">
 
-  <div style="position: absolute; bottom: 0;">
-    <img src="./assets/building.svg" style="width: 100vw; height: 100vh;">
-    <section style="position: absolute; top: 0; left: 300px; width: 400px">
-        <div style="width:auto; height:fit-content"><flat1></flat1></div>
-        <div style="width:auto; height:fit-content; object-fit: contain;"><flat2></flat2></div>
+  <img src="./assets/bg.svg" style="width: 77%; height: 100vh; position: absolute;">
+  <div style="width: 77%; position: relative;">
+    <section style="position: absolute; left: 32px; height: 100vh; display: flex; flex-direction: column; justify-content: center;">
+      <div style="border-radius: 20px; background-color: #cbcbcb; padding: 32px; width: 48px;">
+        <app-elevator-button name="1" (click)="redirect('flat1')"></app-elevator-button>
+        <app-elevator-button name="2" (click)="redirect('flat2')"></app-elevator-button>
+        <app-elevator-button name="3"  (click)="redirect('flat3')"></app-elevator-button>
+      </div>
     </section>
-  </div>
+    <section style="position: absolute; right: 32px; height: 100vh; display: flex; flex-direction: column; justify-content: center;">
+      <div style="height: 85vh; width: 65vw; overflow: hidden;">
+        <router-outlet></router-outlet>
+      </div>
+    </section>
+    </div>
 </div>
 
 
